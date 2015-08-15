@@ -3,6 +3,8 @@ package me.nereo.multiimageselector;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -18,15 +20,15 @@ import java.util.List;
 import me.nereo.multi_image_selector.MultiImageSelectorActivity;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE = 2;
 
     private TextView mResultText;
     private RadioGroup mChoiceMode, mShowCamera;
     private EditText mRequestNum;
-
     private ArrayList<String> mSelectPath;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class MainActivity extends ActionBarActivity {
         mChoiceMode = (RadioGroup) findViewById(R.id.choice_mode);
         mShowCamera = (RadioGroup) findViewById(R.id.show_camera);
         mRequestNum = (EditText) findViewById(R.id.request_num);
+
 
         mChoiceMode.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

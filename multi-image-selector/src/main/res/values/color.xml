@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="actionbar_background">@color/md_light_blue_500</color>
+    <color name="theme_primary">@color/actionbar_background</color>
+    <color name="theme_primary_dark">@color/md_light_blue_700</color>
+    <color name="colorAccent">@color/md_light_blue_700</color>
+
+    <color name="background">#f1f1f1</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>
